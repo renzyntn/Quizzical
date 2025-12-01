@@ -1,4 +1,4 @@
-function Start() {
+function Start({ startGameButton }) {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center gap-[7px] text-lavender-font mb-7.5">
@@ -7,7 +7,10 @@ function Start() {
           Unlock your knowledge.
         </span>
       </div>
-      <button className="min-w-48 min-h-13 bg-lavender-button-start rounded-2xl text-white-custom text-base font-inter font-medium hover:cursor-pointer active:scale-90 transform duration-200 ease-in-out">
+      <button
+        className="min-w-48 min-h-13 bg-lavender-button-start rounded-2xl text-white-custom text-base font-inter font-medium hover:cursor-pointer active:scale-90 transform duration-200 ease-in-out"
+        onClick={startGameButton}
+      >
         Start Quiz
       </button>
     </div>
