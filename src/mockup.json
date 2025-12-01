@@ -1,0 +1,49 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "The creator of the Touhou Project series is:",
+      "correct_answer": "ZUN",
+      "incorrect_answers": ["SUN", "RUN", "PUN"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "Rincewind from the 1995 Discworld game was voiced by which member of Monty Python?",
+      "correct_answer": "Eric Idle",
+      "incorrect_answers": ["John Cleese", "Terry Gilliam", "Michael Palin"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "Which country has three capital cities?",
+      "correct_answer": "South Africa",
+      "incorrect_answers": ["Somalia", "China", "United Kingdom"]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Sports",
+      "question": "What is the name of the AHL affiliate of the Toronto Maple Leafs?",
+      "correct_answer": "Toronto Marlies",
+      "incorrect_answers": [
+        "Toronto Rock",
+        "Toronto Argonauts",
+        "Toronto Wolfpack"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "Frankenmuth, a US city nicknamed &quot;Little Bavaria&quot;, is located in what state?",
+      "correct_answer": "Michigan",
+      "incorrect_answers": ["Pennsylvania", "Kentucky", "Virginia"]
+    }
+  ]
+}
