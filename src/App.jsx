@@ -10,7 +10,7 @@ function App() {
   }
 
   return (
-    <main className="max-w-screen h-screen flex justify-center items-center">
+    <main className="max-w-screen min-h-screen flex justify-center items-center overflow-auto">
       {startGame ? (
         <Quiz />
       ) : (
