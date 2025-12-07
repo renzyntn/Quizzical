@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
+@plugin "daisyui";
 
 @theme {
-    --font-inter: "Inter";
-    --font-karla: "Karla";
+  --font-inter: "Inter";
+  --font-karla: "Karla";
 
-    --color-white-custom: #F5F7FB;
+  --color-white-custom: #f5f7fb;
 
-    --color-lavender: #4D5B9E;
-    --color-lavender-font: #293264;
-    --color-lavender-button-start: #4D5B9E;
-    --color-lavender-button: #D6DBF5;
+  --color-lavender: #4d5b9e;
+  --color-lavender-font: #293264;
+  --color-lavender-button-start: #4d5b9e;
+  --color-lavender-button: #d6dbf5;
 
-    --color-green-custom: #94D7A2;
-    --color-red-custom: #F8BCBC;
+  --color-green-custom: #94d7a2;
+  --color-red-custom: #f8bcbc;
 }
