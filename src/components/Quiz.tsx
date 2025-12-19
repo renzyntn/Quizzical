@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { decode } from "html-entities"; // decode library
+import type { ResultState, APIData, Answer } from "../types/proptypes";
 import clsx from "clsx";
 import mockUpData from "../mockup.json";
 import Loading from "./Loading";
@@ -7,9 +8,9 @@ import Toast from "./Toast";
 
 function Quiz() {
   // Initialize result state array that will handle API response (question and answer)
-  const [result, setResult] = useState([]);
+  const [result, setResult] = useState<ResultState[]>([]);
   // Initialize object state that will store all user answer choices
-  const [selectedAnswer, setSelectedAnswer] = useState({});
+  const [selectedAnswer, setSelectedAnswer] = useState<Answer>({});
   // Initialize score state to 0
   const [score, setScore] = useState(0);
   // Initialize displayScore to false
@@ -33,7 +34,7 @@ function Quiz() {
         if (!response.ok) {
           throw new Error("There was a problem with the server.");
         }
-        const data = await response.json();
+        const data: APIData = await response.json();
 
         // map through data.results object and add a new property 'choicesArray' that will store all
         //  incorrect and correct values and shuffle their index positions (sort and random)
@@ -72,7 +73,7 @@ function Quiz() {
   }, [newGame]); // add newGame state as dependency (if user clicked 'Play again' useEffect will run and re-fetch new set of data)
 
   // Initialize answerChoice function with questionIndex and questionAnswer parameter
-  function answerChoice(questionIndex, questionAnswer) {
+  function answerChoice(questionIndex: number, questionAnswer: string) {
     // Collect all of the answer choices (index and value) and add it in 'selectedAnswer' state
     setSelectedAnswer((prevAnswer) => ({
       ...prevAnswer,

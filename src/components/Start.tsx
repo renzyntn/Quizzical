@@ -1,4 +1,6 @@
-function Start({ startGameButton }) {
+import type { StartGame } from "../types/proptypes";
+
+function Start({ startGameButton }: StartGame) {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center gap-[7px] text-lavender-font mb-7.5">

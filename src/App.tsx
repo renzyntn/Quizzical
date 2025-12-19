@@ -11,11 +11,7 @@ function App() {
 
   return (
     <main className="max-w-screen min-h-screen flex justify-center items-center overflow-auto">
-      {startGame ? (
-        <Quiz />
-      ) : (
-        <Start startGameButton={() => startGameButton()} />
-      )}
+      {startGame ? <Quiz /> : <Start startGameButton={startGameButton} />}
     </main>
   );
 }
